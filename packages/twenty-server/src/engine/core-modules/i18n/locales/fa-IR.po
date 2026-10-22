@@ -104,16 +104,6 @@ msgstr "{hostnameCount} نام میزبان برای دامنه \"{domainName}\"
 msgid "{operationLabel} of {aggregateFieldLabel}"
 msgstr "{operationLabel} از {aggregateFieldLabel}"
 
-#. js-lingui-id: TJ2Qca
-#: src/engine/core-modules/application/connection-provider/utils/assert-connection-scope-allowed-by-provider-or-throw.util.ts
-msgid "{providerDisplayName} only supports connections shared with the workspace."
-msgstr "{providerDisplayName} فقط از اتصال‌های مشترک با فضای کاری پشتیبانی می‌کند."
-
-#. js-lingui-id: Hz1hn8
-#: src/engine/core-modules/application/connection-provider/utils/assert-connection-scope-allowed-by-provider-or-throw.util.ts
-msgid "{providerDisplayName} only supports personal connections."
-msgstr "{providerDisplayName} فقط از اتصال‌های شخصی پشتیبانی می‌کند."
-
 #. js-lingui-id: dmxzg7
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workspace-member-standard-flat-field-metadata.util.ts
 msgctxt "fieldMetadata.label"
@@ -3110,6 +3100,16 @@ msgstr "oauthConfig.{label} ارائه‌دهنده اتصال الزامی اس
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/utils/validate-connection-provider-scope.util.ts
 msgid "Connection provider scope \"{scope}\" is invalid"
 msgstr "دامنه ارائه‌دهنده اتصال \"{scope}\" نامعتبر است"
+
+#. js-lingui-id: lOJLh7
+#: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-connection-provider-validator.service.ts
+msgid "Connection provider scope cannot be changed"
+msgstr ""
+
+#. js-lingui-id: rGTdmC
+#: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-connection-provider-validator.service.ts
+msgid "Connection provider scope cannot be changed after creation: declare a new connection provider with a new universalIdentifier"
+msgstr ""
 
 #. js-lingui-id: vOKvb8
 #. placeholder {0}: flatConnectionProvider.name
@@ -13424,11 +13424,6 @@ msgstr "این حساب متصل را نمی‌توان برای این اقدا
 msgid "This connection is not allowed."
 msgstr "این اتصال مجاز نیست."
 
-#. js-lingui-id: 5G7DBW
-#: src/engine/core-modules/application/connection-provider/connection-provider.exception.ts
-msgid "This connection provider does not support this kind of connection."
-msgstr "این ارائه‌دهنده اتصال از این نوع اتصال پشتیبانی نمی‌کند."
-
 #. js-lingui-id: DtHdRF
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/utils/validate-connection-provider-scope.util.ts
 msgid "This connection provider scope is not supported."
@@ -13806,7 +13801,7 @@ msgstr "این نقش قابل ویرایش نیست."
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-role-permission-flag-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-role-permission-flag-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-role-permission-flag-validator.service.ts
-#: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/utils/validate-role-is-editable.util.ts
+#: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/utils/get-role-not-editable-errors.util.ts
 msgid "This role cannot be modified because it is a system role. Only custom roles can be edited."
 msgstr "این نقش قابل تغییر نیست، زیرا یک نقش سیستمی است. فقط نقش‌های سفارشی قابل ویرایش هستند."
 
